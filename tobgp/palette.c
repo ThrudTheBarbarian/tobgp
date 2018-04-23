@@ -93,7 +93,7 @@ rgb paletteFind(rgb *palette, rgb pix, uint8_t *hue, uint8_t *lum)
 			{
 			best 	= palette[i];
 			*hue	= i/_dHue;
-			*lum	= (i%_dHue) << 1;
+			*lum	= (i%_dHue) << ((_dHue == 8) ? 1 : 0);
 			diff 	= pd;
 			}
 		}

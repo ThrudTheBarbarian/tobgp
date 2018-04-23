@@ -1,0 +1,1 @@
+./build/Debug/tobgp -a palette/altirra.act -i ../ar0600.cut.ppm -c
